@@ -1,5 +1,6 @@
 <?php
-    include "includes/class.inc.php";
+    //include "includes/class.inc.php";
+    include "includes/person.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +13,13 @@
 </head>
 <body>
 <?php
-    $pet01 = new Person();
-    echo $pet01->first;
+    $person1 = new Person();
+    $person1->setName("Puteri");
+    echo $person1->name;
+
+    $person2 = new Person();
+    $person2->setName("Asraff");
+    echo $person2->name;
 ?>    
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-class Person {
+class Person1 {
     private $first = "cajdsf";
     private $last = "uuion";
     private $age = "20";
