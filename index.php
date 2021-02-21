@@ -1,3 +1,7 @@
+<?php
+    include "includes/class.inc.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+<?php
+    $pet01 = new Person();
+    echo $pet01->first;
+?>    
 </body>
 </html>
