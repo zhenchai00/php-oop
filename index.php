@@ -13,13 +13,12 @@
 </head>
 <body>
 <?php
-    $person1 = new Person();
+    $person1 = new Person("CZ", "black", 20);
+    echo $person1->name;
+    echo $person1->eyeColor;
+    echo $person1->age;
     $person1->setName("Puteri");
     echo $person1->name;
-
-    $person2 = new Person();
-    $person2->setName("Asraff");
-    echo $person2->name;
 ?>    
 </body>
 </html>
