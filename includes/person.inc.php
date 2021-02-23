@@ -2,7 +2,7 @@
 
 class Person {
     //properties
-    public $name;
+    private $name;
     public $eyeColor;
     public $age;
 
