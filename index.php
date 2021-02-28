@@ -14,6 +14,7 @@
 <body>
 <?php
     $object = new NewClass;
+    unset($object);
     echo $object->getProperty();
 ?>    
 </body>
