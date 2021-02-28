@@ -1,5 +1,5 @@
 <?php
-    include "includes/class.inc.php";
+    // include "includes/class.inc.php";
     include "includes/person.inc.php";
 ?>
 
@@ -13,9 +13,12 @@
 </head>
 <body>
 <?php
-    $object = new NewClass;
-    unset($object);
-    echo $object->getProperty();
+    // $person1 = new Person("CZ", "black", 20);
+    // echo $person1->getName();
+
+    echo Person::$drinkingAge;
+    Person::setDrinkginAge(18);
+    echo Person::$drinkingAge;
 ?>    
 </body>
 </html>
