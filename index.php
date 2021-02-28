@@ -1,6 +1,5 @@
 <?php
-    // include "includes/class.inc.php";
-    include "includes/person.inc.php";
+    include "includes/autoloader.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +15,9 @@
     $person1 = new Person("CZ", "black", 20);
     echo $person1->getDA();
 
-    // echo Person::$drinkingAge;
-    // Person::setDrinkginAge(18);
-    // echo Person::$drinkingAge;
+    echo Person::$drinkingAge;
+    Person::setDrinkginAge(18);
+    echo Person::$drinkingAge;
 ?>    
 </body>
 </html>
