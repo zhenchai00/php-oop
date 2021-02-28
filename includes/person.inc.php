@@ -19,8 +19,8 @@ class Person {
         $this->name = $name;
     }
 
-    public function getName() {
-        return $this->name;
+    public function getDA() {
+        return self:: $drinkingAge;
     }
 
     public static function setDrinkginAge($newDA) {
