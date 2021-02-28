@@ -1,5 +1,5 @@
 <?php
-    //include "includes/class.inc.php";
+    include "includes/class.inc.php";
     include "includes/person.inc.php";
 ?>
 
@@ -13,8 +13,8 @@
 </head>
 <body>
 <?php
-    $person1 = new Person("CZ", "black", 20);
-    echo $person1->getName();
+    $object = new NewClass;
+    echo $object->getProperty();
 ?>    
 </body>
 </html>
