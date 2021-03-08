@@ -1,5 +1,6 @@
 <?php
-    include "includes/autoloader.inc.php";
+    declare(strict_types = 1);
+    include 'includes/autoloader.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +12,8 @@
     <title>Document</title>
 </head>
 <body>
+<p>My Calculator</p>
     <form action="includes/calc.inc.php" mehtod="post">
-        <p>My Calculator</p>
         <input type="number" name="num1" placeholder="First Number">
         <select name="oper">
             <option value="add">Addition</option>
