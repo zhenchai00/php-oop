@@ -13,7 +13,7 @@
 </head>
 <body>
 <p>My Calculator</p>
-    <form action="includes/calc.inc.php" mehtod="post">
+    <form action="includes/calc.inc.php" method="post">
         <input type="number" name="num1" placeholder="First Number">
         <select name="oper">
             <option value="add">Addition</option>
