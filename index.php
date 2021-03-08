@@ -11,13 +11,16 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    $person1 = new Person("CZ", "black", 20);
-    echo $person1->getDA();
-
-    echo Person::$drinkingAge;
-    Person::setDrinkginAge(18);
-    echo Person::$drinkingAge;
-?>    
+    <form action="includes/calc.inc.php" mehtod="post">
+        <p>My Calculator</p>
+        <input type="number" name="num1" placeholder="First Number">
+        <select name="oper">
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="div">Division</option>
+            <option value="mul">Multiplication</option>
+        </select>
+        <input type="number" name="num2" placeholder="Second Number">
+        <button type="submit" name="submit">Calculate</button>
 </body>
 </html>
