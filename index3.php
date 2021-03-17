@@ -13,6 +13,9 @@
     <?php
         $userObj = new UsersView();
         $userObj->showUser("Daniel");
+
+        $userObj2 = new UsersContr();
+        $userObj2->createUser("Haiya", "testing", "2020-10-10");
     ?>
 </body>
 </html>

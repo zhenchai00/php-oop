@@ -11,4 +11,10 @@ class Users extends Dbh {
         return $results;
     }
 
+    protected function setUser($firstname, $lastname, $dateofbirth) {
+        $sql = "INSERT INTO users(users_firstname, users_lastname, users_dateofbirth) VALUES(?,?,?)";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$firstname, $lastname, $dateofbirth]);
+    }
+
 }
