@@ -10,6 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+        $testObj = new Test();
+        $testObj->setUsersStmt("John", "Doe", "2000-10-05");
+    ?>
 </body>
 </html>
